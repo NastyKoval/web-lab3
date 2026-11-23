@@ -1,0 +1,97 @@
+/* общие стили */
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #3a2b31;
+  background: #fdf1f6;
+  margin: 0;
+  padding: 0 2% 3%;
+}
+
+h2 {
+  color: #c0206a;
+  border-left: 4px solid #16b5b5;
+  padding-left: 10px;
+  font-size: 19px;
+}
+
+/* макет: график + форма */
+.layout { width: 100%; border-spacing: 14px; }
+.layout td, .card {
+  vertical-align: top;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #f0cfdd;
+  border-radius: 8px;
+}
+.cell-canvas { width: 45%; text-align: center; }
+.cell-form { width: 55%; }
+.card { margin: 14px; }
+
+#plane { border: 1px solid #e6b9cd; background: #fffafc; cursor: crosshair; }
+
+.field-label { font-weight: bold; color: #b02a58; margin: 12px 0 4px; }
+
+/* текстовое поле Y */
+.form-area input[type="text"] {
+  width: 55%;
+  margin: 1% 2%;
+  padding: 1% 2%;
+  font-size: 15px;
+  border: 2px solid #e6b9cd;
+  border-radius: 6px;
+}
+.form-area input[type="text"]:focus { border-color: #16b5b5; outline: none; }
+
+/* чекбоксы X и R */
+.check-group label {
+  display: inline-block;
+  margin: 0.6%;
+  padding: 6px 10px;
+  color: #7a2447;
+  background: #fbe6ef;
+  border: 1px solid #e6b9cd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.check-group label:hover { background: #f6d0e0; }
+.check-group input[type="checkbox"] { margin: 0 4px 0 0; accent-color: #16b5b5; }
+
+/* отмеченный чекбокс */
+.check-group label:has(input:checked) {
+  background: #16b5b5;
+  color: #ffffff;
+  border-color: #128f8f;
+}
+
+.controls { margin-top: 16px; }
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 10px 22px;
+  margin-right: 2%;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+.btn-primary { background: #d6336c; }
+.btn-secondary { background: #16b5b5; }
+.back-link { margin-top: 16px; }
+
+.error { color: #b3121f; font-weight: bold; min-height: 18px; white-space: pre-line; }
+.error-list { color: #b3121f; font-weight: bold; }
+
+/* таблицы результатов */
+.results { width: 100%; border-collapse: collapse; background: #ffffff; }
+.results caption {
+  text-align: left; font-weight: bold; color: #c0206a;
+  padding: 10px; font-size: 18px;
+}
+.results th, .results td { border: 1px solid #f2d7e2; padding: 8px; text-align: center; }
+.results th { background: #d6336c; color: #ffffff; }
+.results > tbody > tr:nth-child(even) { background: #fdeef4; }
+
+td.hit  { color: #2e7d32; font-weight: bold; }
+td.miss { color: #b3121f; font-weight: bold; }
