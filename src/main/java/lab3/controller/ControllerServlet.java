@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
-// Точка входа: запрос с x/y/r -> AreaCheckServlet, иначе -> index.jsp.
+// Точка входа: запрос с x/y/r  AreaCheckServlet, иначе  index.jsp.
 public class ControllerServlet extends HttpServlet {
 
     @Override
