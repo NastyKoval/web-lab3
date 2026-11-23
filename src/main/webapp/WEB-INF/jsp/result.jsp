@@ -13,7 +13,7 @@
 <header>
   <h1 class="page-title">Результат проверки</h1>
   <p class="student-info">Ковалева Анастасия Петровна</p>
-  <p class="student-info">Группа P3213 · Вариант ???</p>
+  <p class="student-info">Группа P3213 · Вариант 789</p>
 </header>
 
 <div class="card">
